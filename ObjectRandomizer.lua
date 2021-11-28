@@ -819,7 +819,7 @@ if RunService:IsEdit() then
 	end	
 	
 	-- Function to scale a model
-	-- Written with help from Kohl on RCS Discord Server
+	-- Written with help from Kohl on RSC Discord Server
 	local function scaleModel(model, scale)		
 		local primaryCFrame = model.PrimaryPart.CFrame
 		local scaleVector = Vector3.new(scale, scale, scale)
