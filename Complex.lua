@@ -1,7 +1,3 @@
---[[ Author: Daniel Foreacre (BahamutFierce)
-     Date:   11/10/21
-     Desc:   Class to represent complex numbers in Roblox lua ]]
-
 local Complex = {}
 
 Complex.__index = Complex

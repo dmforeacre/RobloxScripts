@@ -1,7 +1,3 @@
--- Author: Daniel Foreacre  (BahamutFierce)
--- Date:   11/9/21
--- Desc:   Script to automatically unanchor and weld all parts of a model. Should only be used on models WITHOUT motor6Ds
-
 -- Fill path to model here:
 local model = game.Workspace.TileTest
 

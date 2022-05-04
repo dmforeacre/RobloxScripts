@@ -1,8 +1,3 @@
---[[ Author: Daniel Foreacre (BahamutFierce)
-     Date:   11/10/21
-     Desc:   Script to create a fractal out of parts in the workspace. Requires
-             ComplexPolynomial and Complex module scripts]]
-
 local Poly = require(script.Parent.ComplexPolynomial)
 local Complex = require(script.Parent.Complex)
 

@@ -1,7 +1,3 @@
---[[ Author: Daniel Foreacre (BahamutFierce)
-     Date:   11/10/21
-     Desc:   ModuleScript to implement a polynomial class using complex numbers. Requires Complex.lua.]]
-
 local Complex = require(script.Parent.Complex)
 
 local ComplexPolynomial = {}

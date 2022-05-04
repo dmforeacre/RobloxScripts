@@ -1,8 +1,3 @@
--- Original code written by Daniel Foreacre (BahamutFierce)
--- 11/27/21
-
--- Feel free to modify however you want!
-
 -- Services
 local RepStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
