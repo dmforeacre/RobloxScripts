@@ -87,12 +87,19 @@ function PriorityQueue:Dequeue()
 end
 
 -- Checks the lowest priority value in the queue without removing it
--- @return          Any         The value of the lowest priority node
--- @return          Any         The priority of that node
-function PriorityQueue:Peek()
-    local myNode
-
-    return myNode.Value, myNode.Priority
+-- @param           workingNode            Node            Starting node to traverse. Optional. Defaults to self.Root
+-- @param           workingPriority            Any            Minimum priority check. Optional. Defaults to workingNode.Priority
+-- @return          Node         The lowest-priority node.
+function PriorityQueue:Peek(workingNode, workingPriority)
+    workingNode = workingNode or self.Root;
+    workingPriority = workingPriority or (workingNode and workingNode.Priority);
+    if(workingNode.Priority < workingPriority) then
+        workingPriority = workingNode.Priority;
+    end
+    if(workingNode.Left ~= nil) then
+      workingNode = PriorityQueue:Peek(workingNode.Left, workingPriority);
+    end
+    return workingNode;
 end
 
 -- Recursively builds a string to display the queue in order of priorty from least to greatest
